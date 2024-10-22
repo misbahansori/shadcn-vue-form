@@ -7,6 +7,8 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/fonts",
     "shadcn-nuxt",
+    "@nuxt/icon",
+    "@nuxtjs/color-mode",
   ],
 
   future: {
