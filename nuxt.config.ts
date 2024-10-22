@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxt/icon",
     "@nuxtjs/color-mode",
+    "radix-vue",
   ],
 
   future: {
