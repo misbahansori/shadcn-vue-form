@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@nuxt/fonts"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    "@nuxt/fonts",
+    "shadcn-nuxt",
+  ],
 
   future: {
     compatibilityVersion: 4,
@@ -12,5 +17,10 @@ export default defineNuxtConfig({
 
   tailwindcss: {
     viewer: false,
+  },
+
+  shadcn: {
+    prefix: "",
+    componentDir: "./app/components/ui",
   },
 });
