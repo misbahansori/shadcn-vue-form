@@ -3,12 +3,13 @@ const route = useRoute();
 </script>
 
 <template>
-  <div>
+  <div class="">
     <h1>Nuxt Routing set up successfully!</h1>
     <p>Current route: {{ route.path }}</p>
     <a href="https://nuxt.com/docs/getting-started/routing" target="_blank">
       Learn more about Nuxt Routing
     </a>
-    <Button>Go to About Page</Button>
+    <Button variant="destructive">Go to About Page</Button>
+    <Toggle variant="outline">Toggle</Toggle>
   </div>
 </template>
