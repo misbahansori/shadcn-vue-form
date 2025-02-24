@@ -1,13 +1,13 @@
-# Nuxt 3 Starter Template with Tailwind CSS, Radix Vue, and Shadcn
+# Nuxt 3 Starter Template with Tailwind CSS, Reka UI, and Shadcn
 
-This is a starter template for Nuxt 3 projects, pre-configured with Tailwind CSS, Radix Vue, Shadcn, and other essential tools for modern web development.
+This is a starter template for Nuxt 3 projects, pre-configured with Tailwind CSS, Reka UI, Shadcn, and other essential tools for modern web development.
 
 ## Features
 
 - [Nuxt 3](https://nuxt.com/) - The intuitive Vue framework
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
 - [Reka UI](https://reka-ui.com/) - Unstyled, accessible components for building high-quality design systems
-- [shadcn-vue](https://www.shadcn-vue.com/) - Re-usable components built with Radix Vue and Tailwind CSS
+- [shadcn-vue](https://www.shadcn-vue.com/) - Re-usable components built with Reka UI and Tailwind CSS
 - [Prettier](https://prettier.io/) - Opinionated code formatter
 
 ## Setup
