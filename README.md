@@ -4,8 +4,8 @@ This is a starter template for Nuxt 3 projects, pre-configured with Tailwind CSS
 
 ## Features
 
-- [Nuxt 3](https://nuxt.com/) - The intuitive Vue framework
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [Nuxt v3 with compatibility for v4](https://nuxt.com/) - The intuitive Vue framework
+- [Tailwind CSS v4](https://tailwindcss.com/) - A utility-first CSS framework
 - [Reka UI](https://reka-ui.com/) - Unstyled, accessible components for building high-quality design systems
 - [shadcn-vue](https://www.shadcn-vue.com/) - Re-usable components built with Reka UI and Tailwind CSS
 - [Prettier](https://prettier.io/) - Opinionated code formatter
@@ -46,7 +46,7 @@ This template provides a solid foundation for building modern web applications w
 
 ## Customization
 
-- Tailwind CSS: Customize your design tokens in the `tailwind.config.js` file.
+- Tailwind CSS: Customize your design tokens in the `app/assets/css/tailwind.css` file.
 - Reka UI and shadcn: Modify or add components in the `app/components/ui/` directory.
 - Nuxt configuration: Adjust the Nuxt settings in the `nuxt.config.ts` file.
 
@@ -61,7 +61,7 @@ To learn more about the technologies used in this template, check out the follow
 
 ## Deploy
 
-Deploy your Nuxt application easily with platforms like [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [Cloudflare Pages](https://pages.cloudflare.com/).
+Deploy your Nuxt application easily with platforms like [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), [Cloudflare Pages](https://pages.cloudflare.com/) or [NuxtHub](https://hub.nuxt.com/).
 
 Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
