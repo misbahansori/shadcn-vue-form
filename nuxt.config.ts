@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
 
   icon: {
-    cssLayer: "icon",
-    mode: "svg",
+    mode: "css",
+    cssLayer: "base",
   },
 });
