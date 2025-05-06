@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TextArea, TextField } from "@/components/ui/form";
+import { NumberField, TextArea, TextField } from "@/components/ui/form";
 
 useSeoMeta({
   title: "Shadcn Vue Form - Beautiful Form Components",
@@ -30,41 +30,68 @@ useSeoMeta({
       </p>
     </div>
 
-    <div class="mt-16 space-y-8">
-      <!-- TextField Section -->
-      <div class="space-y-4">
-        <h2 class="text-2xl font-bold">Text Field Component</h2>
-        <p class="text-muted-foreground">
-          A versatile text input component that supports various input types and
-          validation.
-        </p>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Text Field Component</h2>
+          <p class="text-muted-foreground">
+            A versatile text input component that supports various input types
+            and validation.
+          </p>
+        </div>
+
+        <div class="max-w-md">
+          <TextField
+            name="username"
+            label="Username"
+            placeholder="Enter your username"
+            description="This is your public display name"
+          />
+        </div>
       </div>
 
-      <div class="max-w-md">
-        <TextField
-          name="username"
-          label="Username"
-          placeholder="Enter your username"
-          description="This is your public display name"
-        />
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Text Area Component</h2>
+          <p class="text-muted-foreground">
+            A multi-line text input component for longer form content.
+          </p>
+        </div>
+
+        <div class="max-w-md">
+          <TextArea
+            name="bio"
+            label="Bio"
+            placeholder="Tell us about yourself"
+            description="Write a short bio about yourself"
+            :rows="4"
+          />
+        </div>
       </div>
 
-      <!-- TextArea Section -->
-      <div class="mt-16 space-y-4">
-        <h2 class="text-2xl font-bold">Text Area Component</h2>
-        <p class="text-muted-foreground">
-          A multi-line text input component for longer form content.
-        </p>
-      </div>
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Number Field Component</h2>
+          <p class="text-muted-foreground">
+            A number input component with increment/decrement controls.
+          </p>
+        </div>
 
-      <div class="max-w-md">
-        <TextArea
-          name="bio"
-          label="Bio"
-          placeholder="Tell us about yourself"
-          description="Write a short bio about yourself"
-          :rows="4"
-        />
+        <div class="max-w-md">
+          <NumberField
+            name="amount"
+            label="Amount"
+            :min="0"
+            :max="100"
+            :step="1"
+            :formatOptions="{
+              style: 'currency',
+              currency: 'USD',
+              currencySign: 'accounting',
+            }"
+            description="Enter an amount between 0 and 100"
+          />
+        </div>
       </div>
     </div>
   </div>
