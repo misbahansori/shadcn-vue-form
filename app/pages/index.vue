@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { NumberField, TextArea, TextField } from "@/components/ui/form";
+import {
+  NumberField,
+  Radio,
+  RadioGroup,
+  TextArea,
+  TextField,
+} from "@/components/ui/form";
+import { ref } from "vue";
 
 useSeoMeta({
   title: "Shadcn Vue Form - Beautiful Form Components",
@@ -13,6 +20,8 @@ useSeoMeta({
     "A collection of beautiful form components built with Vue and Tailwind CSS.",
   twitterCard: "summary_large_image",
 });
+
+const selectedValue = ref("1");
 </script>
 
 <template>
@@ -40,7 +49,7 @@ useSeoMeta({
           </p>
         </div>
 
-        <div class="max-w-md">
+        <div class="mt-4">
           <TextField
             name="username"
             label="Username"
@@ -58,7 +67,7 @@ useSeoMeta({
           </p>
         </div>
 
-        <div class="max-w-md">
+        <div class="mt-4">
           <TextArea
             name="bio"
             label="Bio"
@@ -77,7 +86,7 @@ useSeoMeta({
           </p>
         </div>
 
-        <div class="max-w-md">
+        <div class="mt-4">
           <NumberField
             name="amount"
             label="Amount"
@@ -91,6 +100,28 @@ useSeoMeta({
             }"
             description="Enter an amount between 0 and 100"
           />
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Radio Group Component</h2>
+          <p class="text-muted-foreground">
+            A group of radio buttons for selecting a single option.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <RadioGroup
+            v-model="selectedValue"
+            name="options"
+            label="Select an option"
+            description="Choose one of the following options"
+          >
+            <Radio value="1" label="Option 1" />
+            <Radio value="2" label="Option 2" />
+            <Radio value="3" label="Option 3" />
+          </RadioGroup>
         </div>
       </div>
     </div>
