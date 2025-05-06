@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" generic="TValue">
 import { cn } from "@/lib/utils";
 import { type CheckboxGroupProps, useCheckboxGroup } from "@formwerk/core";
 import { type HTMLAttributes } from "vue";
@@ -9,7 +9,7 @@ import {
 } from "./config";
 
 const props = defineProps<
-  CheckboxGroupProps & {
+  CheckboxGroupProps<TValue> & {
     class?: HTMLAttributes["class"];
   }
 >();
