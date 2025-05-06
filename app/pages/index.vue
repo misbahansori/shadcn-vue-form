@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import {
+  Checkbox,
+  CheckboxGroup,
   NumberField,
   Radio,
   RadioGroup,
   TextArea,
   TextField,
 } from "@/components/ui/form";
-import { ref } from "vue";
 
 useSeoMeta({
   title: "Shadcn Vue Form - Beautiful Form Components",
@@ -20,8 +21,6 @@ useSeoMeta({
     "A collection of beautiful form components built with Vue and Tailwind CSS.",
   twitterCard: "summary_large_image",
 });
-
-const selectedValue = ref("1");
 </script>
 
 <template>
@@ -113,7 +112,6 @@ const selectedValue = ref("1");
 
         <div class="mt-4">
           <RadioGroup
-            v-model="selectedValue"
             name="options"
             label="Select an option"
             description="Choose one of the following options"
@@ -122,6 +120,44 @@ const selectedValue = ref("1");
             <Radio value="2" label="Option 2" />
             <Radio value="3" label="Option 3" />
           </RadioGroup>
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Checkbox Component</h2>
+          <p class="text-muted-foreground">
+            A single checkbox for binary choices.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <Checkbox
+            name="terms"
+            label="I accept the terms and conditions"
+            description="You must accept the terms to continue"
+          />
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Checkbox Group Component</h2>
+          <p class="text-muted-foreground">
+            A group of checkboxes for selecting multiple options.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <CheckboxGroup
+            name="preferences"
+            label="Select your preferences"
+            description="Choose all that apply"
+          >
+            <Checkbox value="newsletter" label="Subscribe to newsletter" />
+            <Checkbox value="updates" label="Receive updates" />
+            <Checkbox value="marketing" label="Marketing emails" />
+          </CheckboxGroup>
         </div>
       </div>
     </div>

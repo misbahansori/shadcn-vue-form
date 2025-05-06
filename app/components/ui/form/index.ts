@@ -3,3 +3,5 @@ export { default as TextArea } from "./TextArea.vue";
 export { default as NumberField } from "./NumberField.vue";
 export { default as RadioGroup } from "./RadioGroup.vue";
 export { default as Radio } from "./Radio.vue";
+export { default as Checkbox } from "./Checkbox.vue";
+export { default as CheckboxGroup } from "./CheckboxGroup.vue";
