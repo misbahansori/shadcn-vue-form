@@ -5,6 +5,8 @@ import {
   NumberField,
   Radio,
   RadioGroup,
+  Select,
+  SelectOption,
   TextArea,
   TextField,
 } from "@/components/ui/form";
@@ -158,6 +160,29 @@ useSeoMeta({
             <Checkbox value="updates" label="Receive updates" />
             <Checkbox value="marketing" label="Marketing emails" />
           </CheckboxGroup>
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Select Component</h2>
+          <p class="text-muted-foreground">
+            A dropdown select component for choosing from a list of options.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <Select
+            name="country"
+            label="Select Country"
+            placeholder="Choose a country"
+            description="Select your country of residence"
+          >
+            <SelectOption value="us" label="United States" />
+            <SelectOption value="uk" label="United Kingdom" />
+            <SelectOption value="ca" label="Canada" />
+            <SelectOption value="au" label="Australia" />
+          </Select>
         </div>
       </div>
     </div>
