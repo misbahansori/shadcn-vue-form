@@ -22,6 +22,7 @@ const {
   listBoxProps,
   descriptionProps,
   isPopupOpen,
+  selectedOption,
 } = useSelect(props);
 </script>
 
@@ -61,7 +62,7 @@ const {
         v-if="isPopupOpen"
         ref="floating"
         v-bind="listBoxProps"
-        class="bg-popover text-popover-foreground absolute z-50 min-w-[8rem] overflow-hidden rounded-md border shadow-md"
+        class="bg-popover text-popover-foreground border-input absolute z-50 mt-0.5 w-full min-w-[8rem] overflow-hidden rounded-md border p-1 shadow-md"
       >
         <slot />
       </div>
