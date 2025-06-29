@@ -7,9 +7,9 @@ import {
   RadioGroup,
   Select,
   SelectOption,
-  TextArea,
-  TextField,
 } from "@/components/ui/form";
+import { Input } from "~/components/ui/input";
+import { Textarea } from "~/components/ui/textarea";
 
 useSeoMeta({
   title: "Shadcn Vue Form - Beautiful Form Components",
@@ -51,7 +51,7 @@ useSeoMeta({
         </div>
 
         <div class="mt-4">
-          <TextField
+          <Input
             name="username"
             label="Username"
             placeholder="Enter your username"
@@ -69,7 +69,7 @@ useSeoMeta({
         </div>
 
         <div class="mt-4">
-          <TextArea
+          <Textarea
             name="bio"
             label="Bio"
             placeholder="Tell us about yourself"
