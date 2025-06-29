@@ -2,13 +2,12 @@
 import {
   Checkbox,
   CheckboxGroup,
-  Radio,
-  RadioGroup,
   Select,
   SelectOption,
 } from "@/components/ui/form";
 import { Input } from "~/components/ui/input";
 import { NumberField } from "~/components/ui/number-field";
+import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Textarea } from "~/components/ui/textarea";
 
 useSeoMeta({
@@ -118,9 +117,9 @@ useSeoMeta({
             label="Select an option"
             description="Choose one of the following options"
           >
-            <Radio value="1" label="Option 1" />
-            <Radio value="2" label="Option 2" />
-            <Radio value="3" label="Option 3" />
+            <RadioGroupItem value="1" label="Option 1" />
+            <RadioGroupItem value="2" label="Option 2" />
+            <RadioGroupItem value="3" label="Option 3" />
           </RadioGroup>
         </div>
       </div>
