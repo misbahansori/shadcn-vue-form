@@ -22,14 +22,10 @@ const {
   <div class="flex flex-col gap-2">
     <label
       v-bind="labelProps"
-      :class="
-        cn(
-          'text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
-          props.class,
-        )
-      "
+      class="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
     >
       <slot name="label">{{ label }}</slot>
+      <span v-if="props.required" class="text-destructive">&nbsp;*</span>
     </label>
 
     <input
@@ -45,7 +41,7 @@ const {
     <div
       v-if="errorMessage"
       v-bind="errorMessageProps"
-      :class="cn('text-destructive text-sm', props.class)"
+      :class="cn('text-destructive text-xs', props.class)"
     >
       {{ errorMessage }}
     </div>
