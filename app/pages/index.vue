@@ -5,6 +5,7 @@ import { NumberField } from "~/components/ui/number-field";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Select, SelectOption } from "~/components/ui/select";
 import { Slider } from "~/components/ui/slider";
+import { Switch } from "~/components/ui/switch";
 import { Textarea } from "~/components/ui/textarea";
 
 useSeoMeta({
@@ -48,8 +49,8 @@ useSeoMeta({
 
         <div class="mt-4">
           <Input
-            name="username"
             label="Username"
+            name="username"
             placeholder="Enter your username"
             description="This is your public display name"
           />
@@ -90,11 +91,6 @@ useSeoMeta({
             :min="0"
             :max="100"
             :step="1"
-            :formatOptions="{
-              style: 'currency',
-              currency: 'USD',
-              currencySign: 'accounting',
-            }"
             description="Enter an amount between 0 and 100"
           />
         </div>
@@ -199,6 +195,19 @@ useSeoMeta({
             :step="1"
             :model-value="50"
           />
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Switch Component</h2>
+          <p class="text-muted-foreground">
+            A switch component for toggling boolean values.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <Switch name="notifications" label="Enable notifications" />
         </div>
       </div>
     </div>
