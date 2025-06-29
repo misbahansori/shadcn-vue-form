@@ -4,6 +4,7 @@ import { Input } from "~/components/ui/input";
 import { NumberField } from "~/components/ui/number-field";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Select, SelectOption } from "~/components/ui/select";
+import { Slider } from "~/components/ui/slider";
 import { Textarea } from "~/components/ui/textarea";
 
 useSeoMeta({
@@ -178,6 +179,26 @@ useSeoMeta({
             <SelectOption value="ca" label="Canada" />
             <SelectOption value="au" label="Australia" />
           </Select>
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold">Slider Component</h2>
+          <p class="text-muted-foreground">
+            A slider component for selecting values within a range.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <Slider
+            name="volume"
+            label="Volume"
+            :min="0"
+            :max="100"
+            :step="1"
+            :model-value="50"
+          />
         </div>
       </div>
     </div>
