@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import { useSelect, type SelectProps } from "@formwerk/core";
 import { useId } from "vue";
-import {
-  formDescriptionClass,
-  formErrorMessageClass,
-  formLabelClass,
-} from "~/components/ui/form/config";
 
 const props = defineProps<SelectProps<string, string>>();
 
@@ -28,7 +23,14 @@ const {
 
 <template>
   <div class="space-y-2">
-    <div v-bind="labelProps" :class="cn(formLabelClass)">
+    <div
+      v-bind="labelProps"
+      :class="
+        cn(
+          'text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+        )
+      "
+    >
       {{ label }}
     </div>
 
@@ -71,7 +73,7 @@ const {
     <p
       v-if="description"
       v-bind="descriptionProps"
-      :class="cn(formDescriptionClass)"
+      :class="cn('text-muted-foreground text-sm')"
     >
       {{ description }}
     </p>
@@ -79,7 +81,7 @@ const {
     <p
       v-if="isTouched && errorMessage"
       v-bind="errorMessageProps"
-      :class="cn(formErrorMessageClass)"
+      :class="cn('text-destructive text-sm')"
     >
       {{ errorMessage }}
     </p>
