@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Checkbox, CheckboxGroup } from "@/components/ui/checkbox";
-import { Input } from "~/components/ui/input";
-import { NumberField } from "~/components/ui/number-field";
-import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
-import { Select, SelectOption } from "~/components/ui/select";
-import { Slider } from "~/components/ui/slider";
-import { Switch } from "~/components/ui/switch";
-import { Textarea } from "~/components/ui/textarea";
+import { Checkbox, CheckboxGroup } from "~/registry/default/ui/checkbox";
+import { Input } from "~/registry/default/ui/input";
+import { NumberField } from "~/registry/default/ui/number-field";
+import { RadioGroup, RadioGroupItem } from "~/registry/default/ui/radio-group";
+import { Select, SelectOption } from "~/registry/default/ui/select";
+import { Slider } from "~/registry/default/ui/slider";
+import { Switch } from "~/registry/default/ui/switch";
+import { Textarea } from "~/registry/default/ui/textarea";
 
 useSeoMeta({
   title: "Shadcn Vue Form - Beautiful Form Components",
