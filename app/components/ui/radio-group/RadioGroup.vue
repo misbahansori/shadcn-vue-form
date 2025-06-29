@@ -20,7 +20,7 @@ const {
 </script>
 
 <template>
-  <div v-bind="groupProps" class="space-y-2">
+  <div v-bind="groupProps" class="flex flex-col gap-2">
     <label
       v-bind="labelProps"
       :class="

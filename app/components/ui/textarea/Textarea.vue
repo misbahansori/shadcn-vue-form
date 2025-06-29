@@ -25,7 +25,7 @@ const delegatedProps = computed(() => {
 </script>
 
 <template>
-  <div class="space-y-2">
+  <div class="flex flex-col gap-2">
     <label
       v-bind="labelProps"
       :class="
