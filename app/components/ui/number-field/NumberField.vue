@@ -3,11 +3,6 @@ import { cn } from "@/lib/utils";
 import { type NumberFieldProps, useNumberField } from "@formwerk/core";
 import { LucideChevronDown, LucideChevronUp } from "lucide-vue-next";
 import { type HTMLAttributes } from "vue";
-import {
-  formDescriptionClass,
-  formErrorMessageClass,
-  formLabelClass,
-} from "./config";
 
 const props = defineProps<
   NumberFieldProps & {
@@ -28,7 +23,15 @@ const {
 
 <template>
   <div class="space-y-2">
-    <label v-bind="labelProps" :class="cn(formLabelClass, props.class)">
+    <label
+      v-bind="labelProps"
+      :class="
+        cn(
+          'text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+          props.class,
+        )
+      "
+    >
       <slot name="label">{{ label }}</slot>
     </label>
 
@@ -65,7 +68,7 @@ const {
     <div
       v-if="errorMessage"
       v-bind="errorMessageProps"
-      :class="formErrorMessageClass"
+      :class="cn('text-destructive text-sm', props.class)"
     >
       {{ errorMessage }}
     </div>
@@ -73,7 +76,7 @@ const {
     <div
       v-if="description"
       v-bind="descriptionProps"
-      :class="formDescriptionClass"
+      :class="cn('text-muted-foreground text-sm', props.class)"
     >
       {{ description }}
     </div>

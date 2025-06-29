@@ -2,13 +2,13 @@
 import {
   Checkbox,
   CheckboxGroup,
-  NumberField,
   Radio,
   RadioGroup,
   Select,
   SelectOption,
 } from "@/components/ui/form";
 import { Input } from "~/components/ui/input";
+import { NumberField } from "~/components/ui/number-field";
 import { Textarea } from "~/components/ui/textarea";
 
 useSeoMeta({
