@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import {
-  Checkbox,
-  CheckboxGroup,
-  Select,
-  SelectOption,
-} from "@/components/ui/form";
+import { Checkbox, CheckboxGroup } from "@/components/ui/checkbox";
 import { Input } from "~/components/ui/input";
 import { NumberField } from "~/components/ui/number-field";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
+import { Select, SelectOption } from "~/components/ui/select";
 import { Textarea } from "~/components/ui/textarea";
 
 useSeoMeta({
