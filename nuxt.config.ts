@@ -29,6 +29,13 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  fonts: {
+    families: [
+      { name: "Inter", provider: "google", global: true },
+      { name: "Outfit", provider: "google", global: true },
+    ],
+  },
+
   icon: {
     mode: "css",
     cssLayer: "base",

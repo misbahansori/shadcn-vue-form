@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { Input } from "~/registry/default/ui/input";
+</script>
+
 <template>
   <div class="mb-16 text-center">
     <h1
@@ -9,5 +13,8 @@
       A growing collection of 59 input components built with Vue and Tailwind
       CSS.
     </p>
+  </div>
+  <div>
+    <Input label="Email" />
   </div>
 </template>
